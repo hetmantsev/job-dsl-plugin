@@ -127,7 +127,7 @@ public class DescriptorImpl extends BuildStepDescriptor<Builder> {
 
     public boolean isSecurityEnabled() {
         Jenkins jenkins = Jenkins.getInstance();
-        return jenkins.isUseSecurity() && jenkins.getDescriptorByType(GlobalJobDslSecurityConfiguration.class).isUseScriptSecurity();
+        return false;
     }
 
     private static void removeSeedReference(String key) {
